@@ -20,7 +20,7 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.Catego
 
 
     Context context;
-    ArrayList<CategoryModel> categoryModels;
+    ArrayList<CategoryModel> categoryModels; // Kategori bilgilerini içeren liste
     public CategoryAdapter(Context context, ArrayList<CategoryModel> categoryModels){
         this.context=context;
         this.categoryModels=categoryModels;

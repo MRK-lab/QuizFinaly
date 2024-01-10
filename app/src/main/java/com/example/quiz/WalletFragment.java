@@ -32,7 +32,7 @@ public class WalletFragment extends Fragment {
     FirebaseFirestore database;
     User user;
 
-    @Override
+    @Override    // bu kısımda firebase bağlanarak kullanıcya ait coin değerini alarak ekrana yazdırabiliyoruz
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment

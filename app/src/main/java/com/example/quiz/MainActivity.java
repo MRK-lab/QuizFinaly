@@ -28,6 +28,8 @@ public class MainActivity extends AppCompatActivity {
     ActivityMainBinding binding;
 
 
+
+    // Home menüsünü konfigrasyonu için gerekli kod
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -111,6 +113,8 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         if(item.getItemId()== R.id.wallet){
+
+            // tıkladığı zamana vallet açılsın
             Toast.makeText(this, "wallet is clicked.", Toast.LENGTH_SHORT).show();
         }
         return super.onOptionsItemSelected(item);

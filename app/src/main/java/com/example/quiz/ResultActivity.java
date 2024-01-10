@@ -35,6 +35,7 @@ public class ResultActivity extends AppCompatActivity {
 
         FirebaseFirestore database=FirebaseFirestore.getInstance();
 
+        // kazanılan puanı eski punanın üzerine ekliyor firebasede
         database.collection("users")
                 .document(FirebaseAuth.getInstance().getUid())
                 .update("coins", FieldValue.increment(points));

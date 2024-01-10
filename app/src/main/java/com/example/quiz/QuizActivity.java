@@ -166,7 +166,7 @@ public class QuizActivity extends AppCompatActivity {
                 break;
             case R.id.nextBtn:
                 reset();
-                if(index<=questions.size()){
+                if(index<questions.size()-1){
                     index++;
                     setNextQuestion();
                 } else{
