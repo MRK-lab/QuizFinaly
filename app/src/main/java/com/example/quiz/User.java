@@ -1,10 +1,13 @@
 package com.example.quiz;
 
+import java.security.Timestamp;
+
 public class User {
 
     private String name, email, pass, profile, referCode, userId;
-    private long coins= 25;
-    private long like= 3;
+    private long coins= 0;
+    private long like= 0;
+    private int likeDate;
 
 
     public User() {
@@ -17,6 +20,14 @@ public class User {
         this.referCode = referCode;
     }
 
+
+    public int getLikedDate() {
+        return likeDate;
+    }
+
+    public void setLikedDate(int likeDate) {
+        this.likeDate = likeDate;
+    }
 
     public String getName() {
         return name;

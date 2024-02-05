@@ -93,6 +93,7 @@ public class SpinnerActivity extends AppCompatActivity {
         binding.spinBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 Random r= new Random();
                 int randomNumber=r.nextInt(8);
 
@@ -147,7 +148,7 @@ public class SpinnerActivity extends AppCompatActivity {
                 .addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override
                     public void onSuccess(Void unused) {
-                        Toast.makeText(SpinnerActivity.this, "Coins added im account.", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(SpinnerActivity.this, "Puan hesabınıza eklendi...", Toast.LENGTH_SHORT).show();
                         finish();
                     }
                 });
