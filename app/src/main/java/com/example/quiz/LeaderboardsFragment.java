@@ -52,11 +52,14 @@ public class LeaderboardsFragment extends Fragment {
                     public void onSuccess(QuerySnapshot queryDocumentSnapshots) {
                         for(DocumentSnapshot snapshot : queryDocumentSnapshots){
                             User user = snapshot.toObject(User.class);
+                            user.setUserId(snapshot.getId()); // Belirli bir kullanıcı için kimlik bilgisini ayarlayın
                             users.add(user);
                         }
                         adapter.notifyDataSetChanged();
                     }
                 });
+
+
 
         return binding.getRoot();
     }
